@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-arcgis-lubbock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "City of Lubbock GIS — Lubbock, Texas open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-arcgis-lubbock": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-lubbock"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-arcgis-lubbock"
+    "url": "git+https://github.com/pipeworx-io/mcp-arcgis-lubbock.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-3fcc6e4284c2bfb5dcaf7b3b44143e41ddc371a50f8721c7bb83e030e4c6607b",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
